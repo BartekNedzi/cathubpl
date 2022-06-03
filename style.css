@@ -1,0 +1,162 @@
+:root {
+    --blue: rgb(0, 9, 74);
+    --gray: rgb(52, 51, 51);
+    --white: rgb(255, 255, 255);
+    --pink: rgb(255,0,191);
+}
+
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+      width:100%;
+      height: 80px;
+      display: block;
+      background-color:#101010;
+  }
+
+  .inner_header {
+      width: 1000px;
+      height:100%;
+      display: block;
+      margin: 0 auto;
+      /*background-color: red;*/
+  }
+
+  .logo_container {
+      height: 100%;
+      display: table;
+      float: left;
+
+  }
+
+  .logo_container h1 {
+    color:white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.logo_container h1 span {
+    font-weight: 800;
+    color:#ffa31a;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+
+}
+
+.navigation a:last-child {
+    padding-right: 0;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family:'Montserrat';
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    align-items: center;
+  }
+  
+  #slider {
+    width: 768px;
+    height: 420px;
+  }
+  
+  #slider #top-row {
+    width: 768px;
+    height: 420px;
+    overflow: hidden;
+  }
+  
+  #slider #top-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #slider .slide {
+    display: none;
+    width: 100%;
+    flex: 1;
+  }
+  
+  #slider .slide.active {
+    display: block;
+  }
+  
+  #slider #bottom-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #dots {
+    margin-top: 10px;
+    display: inline-flex;
+    padding: 5px 10px;
+    padding-right: 0;
+    border-radius: 2px;
+  }
+  
+  #dots .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #3a3a3a;
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 10px;
+  }
+  
+  .arrow {
+    margin: 0 5px;
+  }
+  
+  .arrow,
+  .dot {
+    cursor: pointer;
+  }
+
+footer {
+      position: absolute;
+      height: 90px;
+      width: 100%;
+      margin-bottom: 0%;
+      background-color: var(--blue);
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+}
